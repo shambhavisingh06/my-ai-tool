@@ -1,1 +1,256 @@
-<h1>My AI Tool</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobPilot AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <div class="logo">🚀 JobPilot AI</div>
+
+    <ul>
+        <li>Dashboard</li>
+        <li>Resume</li>
+        <li>Jobs</li>
+        <li>Tracker</li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <h1>AI Job Application Command Centre</h1>
+
+    <p>
+        Upload your resume, discover matching jobs,
+        generate cover letters and track applications.
+    </p>
+
+    <input type="file" id="resumeUpload">
+
+<br><br>
+
+<button onclick="uploadResume()">
+    Analyze Resume
+</button>
+
+<p id="result"></p>
+</section>
+
+<section class="stats">
+
+    <div class="card">
+        <h2>87%</h2>
+        <p>Resume Score</p>
+    </div>
+
+    <div class="card">
+        <h2>24</h2>
+        <p>Job Matches</p>
+    </div>
+
+    <div class="card">
+        <h2>12</h2>
+        <p>Applications</p>
+    </div>
+
+    <div class="card">
+        <h2>3</h2>
+        <p>Interviews</p>
+    </div>
+
+</section>
+<section class="analysis">
+
+    <h2>AI Resume Analysis</h2>
+
+    <div id="result"></div>
+
+</section>
+<section class="jobs">
+    <section class="tracker">
+
+    <h2>📊 Application Tracker</h2>
+
+    <div class="tracker-board">
+
+        <div class="column">
+            <h3>Applied</h3>
+
+            <div class="tracker-card">
+                Google - Data Analyst
+            </div>
+
+            <div class="tracker-card">
+                Infosys - AI Intern
+            </div>
+        </div>
+
+        <div class="column">
+            <h3>Interview</h3>
+
+            <div class="tracker-card">
+                Amazon - Business Analyst
+            </div>
+        </div>
+
+        <div class="column">
+            <h3>Offer</h3>
+
+            <div class="tracker-card">
+                Microsoft - Data Analyst
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+    <h2>🎯 Recommended Jobs</h2>
+
+    <div class="job-grid">
+
+        <div class="job-card">
+            <h3>Data Analyst</h3>
+            <p>Match Score: 92%</p>
+            <button>Apply Now</button>
+        </div>
+
+        <div class="job-card">
+            <h3>AI Intern</h3>
+            <p>Match Score: 88%</p>
+            <button>Apply Now</button>
+        </div>
+
+        <div class="job-card">
+            <h3>Business Analyst</h3>
+            <p>Match Score: 85%</p>
+            <button>Apply Now</button>
+        </div>
+
+    </div>
+
+</section>
+<footer>
+    <p>© 2026 JobPilot AI | Built for Hackathon</p>
+</footer>
+<section class="chatbot">
+
+    <h2>🤖 AI Career Assistant</h2>
+
+    <div id="chatBox">
+        <div class="bot-message">
+            Hello! I am your AI Career Assistant. Ask me anything about jobs, resumes, or interviews.
+        </div>
+    </div>
+
+    <input
+        type="text"
+        id="userInput"
+        placeholder="Ask something...">
+
+    <button onclick="sendMessage()">
+        Send
+    </button>
+
+</section>
+<script src="script.js"></script>
+<section class="gap-analysis">
+
+    <h2>🎯 Skill Gap Analysis</h2>
+
+    <div class="gap-card">
+
+        <h3>Missing Skills</h3>
+
+        <ul>
+            <li>Power BI</li>
+            <li>Tableau</li>
+            <li>Machine Learning</li>
+        </ul>
+
+        <p>
+            Learn these skills to improve your
+            chances of getting shortlisted.
+        </p>
+
+    </div>
+
+</section>
+<section class="cover-letter">
+
+    <h2>✍️ AI Cover Letter Generator</h2>
+
+    <input
+        type="text"
+        id="jobRole"
+        placeholder="Enter Job Role">
+
+    <button onclick="generateLetter()">
+        Generate Cover Letter
+    </button>
+
+    <div id="letterOutput"></div>
+
+</section>
+
+</body>
+</html>
+<h2>🤖 AI Career Coach</h2>
+<div class="coach-card">
+
+    <h3>🎯 Career Overview</h3>
+
+    <p>
+        Based on your resume analysis, you have a strong foundation
+        in Data Analysis and problem-solving. Your profile aligns well
+        with entry-level Data Analyst, Business Analyst and AI Intern roles.
+    </p>
+
+    <h3>💪 Strengths</h3>
+
+    <ul>
+        <li>Strong analytical thinking</li>
+        <li>Good understanding of SQL and Python</li>
+        <li>Data visualization skills</li>
+        <li>Problem-solving mindset</li>
+    </ul>
+
+    <h3>📈 Skills to Improve</h3>
+
+    <ul>
+        <li>Power BI</li>
+        <li>Tableau</li>
+        <li>Machine Learning Fundamentals</li>
+        <li>Advanced SQL Queries</li>
+    </ul>
+
+    <h3>🚀 Recommended Action Plan</h3>
+
+    <p>
+        1. Complete 2 portfolio projects.<br>
+        2. Learn Power BI and Tableau.<br>
+        3. Practice SQL interview questions.<br>
+        4. Apply to 10-15 relevant jobs every week.
+    </p>
+
+    <h3>💼 Best Matching Roles</h3>
+
+    <p>
+        • Data Analyst (92% Match)<br>
+        • Business Analyst (88% Match)<br>
+        • AI Intern (85% Match)
+    </p>
+
+    <h3>📊 Expected Growth</h3>
+
+    <p>
+        By completing the recommended learning path,
+        your estimated job match score can increase
+        from 87% to 95%.
+    </p>
+
+</div>
+
+</section>
